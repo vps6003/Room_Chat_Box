@@ -5,10 +5,12 @@
   flex-direction: column;
   height: 100vh;
   width: 100vw;
+  background-image: url('../../../assets/pexels-aleksandar-pasaric-325185.jpg');
   h1 {
     margin: 0.5em auto;
-    color: #FFF;
+    color: black;
     text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
 }
 .chatbox {
@@ -21,7 +23,10 @@
   .messages_list {
     overflow-y: auto;
     height: 100%;
-  }
+background-image: url('../../../assets/pexels-carlos-oliva-3586966.jpg'); 
+ background-size: cover;
+ 
+ }
   &__messages {
     &.mine .message-box {
       float: right;
@@ -55,6 +60,7 @@
     float: right;
     border-top-right-radius: 0.2em;
     border-bottom-right-radius: 0.2em;
+  background-image: linear-gradient(hotpink, indigo);
     h1 {
       background: rgba(255, 255, 255, 0.05);
       color: rgba(255, 255, 255, 0.9);
@@ -72,7 +78,7 @@
     margin: 1em 0.7em;
     &--active {
       @extend .chatbox__user;
-      background: rgba(23, 190, 187, 0.8);
+      background: rgba(10, 245, 241, 0.8);
     }
   }
   p {
@@ -87,7 +93,7 @@
   form {
     background: #222;
     input {
-      background: rgba(255, 255, 255, 0.03);
+      background: rgb(159, 46, 46);
       position: absolute;
       bottom: 0;
       left: 0;

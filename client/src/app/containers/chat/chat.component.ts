@@ -16,7 +16,7 @@ export class ChatComponent {
   constructor() { }
 
   userNameUpdate(name: string): void {
-    this.socket = io.io(`https://chat-competent-programming.herokuapp.com/?userName=${name}`);
+    this.socket = io.io(`http://127.0.0.1:3000/?userName=${name}`);
     this.userName = name;
 
     this.socket.emit('set-user-name', name);

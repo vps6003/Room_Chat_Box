@@ -1,7 +1,7 @@
 <div class="container">
-  <h1>Competent programming - Chat App</h1>
+  <h1>VPS Domain</h1>
   <app-usernname (userNameEvent)="userNameUpdate($event)" *ngIf="!userName"></app-usernname>
-  <div class="chatbox">
+  <div class="chatbox">    
     <div class="chatbox__user-list">
       <h2>User list</h2>
       <div class="chatbox__user--active" *ngFor="let user of userList" >
@@ -21,7 +21,7 @@
     </div>
   </div>
   <div class="send-message">
-    <input type="text" [(ngModel)]="message">
+    <input type="text" [(ngModel)]="message" name="chatArea" placeholder="Enter Text">
     <button (click)="sendMessage()">Send</button>
   </div>
 </div>
