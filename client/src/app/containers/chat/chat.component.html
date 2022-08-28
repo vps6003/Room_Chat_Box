@@ -1,6 +1,7 @@
 <div  class="container">
     <h1>VPS  Domain</h1>
     <app-usernname  (userNameEvent)="userNameUpdate($event)"  *ngIf="!userName"></app-usernname>
+    <div class = "userName">{{userName}}</div>
     <div  class="chatbox">        
         <div  class="chatbox__user-list">
             <h2>User  list</h2>

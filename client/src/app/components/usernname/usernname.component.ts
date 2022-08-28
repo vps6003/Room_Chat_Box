@@ -7,10 +7,17 @@ import  {  Component,  Output,  EventEmitter  }  from  '@angular/core';
 })
 export  class  UsernnameComponent  {
     @Output()  userNameEvent  =  new  EventEmitter<string>();
+    userName :any ='';
+    name:any = () =>{
+    this.userName = prompt("Enter Name");
+    this.setUserName();
+    }
 
-    userName  =  '';
 
     constructor()  {  }
+    ngOnInit() :void {
+        this.name();
+    }
 
     setUserName():  void  {
         this.userNameEvent.emit(this.userName);
